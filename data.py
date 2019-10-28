@@ -1,48 +1,57 @@
 import requests
+import ijson
 import json
 import time
 import sys
-import ijson
 
 def main(arglist):
-
     reload(sys)
     sys.setdefaultencoding('utf8')
 
-    headers = {
+    # Setting up info for our POST to the API
+    api_token_headers = {
+    'Authorization': 'Basic NjdjOWJkYjc4OTg1NGVmYzliMjBiNGM0YzA2Y2EwY2I6MjIxMzJmMzhiZjNlNDdiNzk0OTAzZjkzMDJiNWJlOGU=',
+    }
+    api_token_data = {
+    'grant_type': 'client_credentials',
+    }
+    api_token_url = 'https://accounts.spotify.com/api/token'
+
+    # Doing our POST, will now have authorization from the server
+    api_token_response = requests.post(api_token_url, data=api_token_data, headers=api_token_headers)
+    if api_token_response.status_code == 200:
+        print 'Request for our API token successful.'
+    else:
+        print 'Request for our API token failure: ', api_token_response.status_code
+
+    # Parse the JSON data so we can get our authorization from it
+    parsed_api_token_json = json.loads(api_token_response.text)
+    api_authorization_token = parsed_api_token_json.get('access_token')
+    api_authorization_token = 'Bearer ' + api_authorization_token
+
+    # Set new values for our new GET we are sending to the server
+    api_request_headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQAxMZFnRq8zN93XILaRaYfnorG4lQYHXx5TnttchH2YeqyQGa5Ju21fQk0-PXVA3Bv1hqQ2N-UzY4tH0W-koBU42OVp-yaSyArCYbxCwT6Hs3rHTr8bzyi8z-UX__DlMWdDhHUBpbSmnJl0NevpGzfW4d8tkz4DXc3GvG5GNqVuu53QCmu4hEs6SeR-SrcTRjyKZthmTqwzXvKpGoIlBmGZTcOexrg7drDRJjKv792d-1H5najFu3yxjt0p45vLxxFX2N-UljEl-CE2NPxv7OhpWjSirmYeThbIBeo',
+    'Authorization': api_authorization_token
     }
-
-    params = (
+    api_request_params = (
         ('country', 'ES'),
     )
+    api_request_url = 'https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums'
 
-    response = requests.get('https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums', headers=headers, params=params)
-    if response.status_code == 200:
-        print 'Request successful: ', response.status_code
+    # We now have our key, and new GET request for any data we want
+    data_request_response = requests.get(api_request_url, headers=api_request_headers, params=api_request_params)
+    if data_request_response.status_code == 200:
+        print 'Request for data from spotify successful.'
     else:
-        print 'Request failure: ', response.status_code
+        print 'Request for data from spotify failure: ', data_request_response.status_code
 
-    json_data = json.loads(response.text)
-    dict = response.json()
+    # Parse the JSON data so we can grab any information we want from it
+    parsed_data_request_json = json.loads(data_request_response.text)
 
-    with open("data_file.json", "w") as file:
-        file.write(response.text)
-
-    
-    f = open('data_file.json', 'r')
-    parser = ijson.parse(f)
-    paths = sorted(set(prefix for prefix, event, value in parser if prefix))
-
-    for path in paths:
-        print path
-
-
-    for x in range(0, 20):
-        songID = json_data['items'][x]['id']
-        print(songID)
+    for data in parsed_data_request_json:
+        print data
 
 if __name__ == "__main__":
     main(sys.argv[0])
