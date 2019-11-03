@@ -49,9 +49,28 @@ def main(arglist):
 
     # Parse the JSON data so we can grab any information we want from it
     parsed_data_request_json = json.loads(data_request_response.text)
+    all_album_id_string = ""
+    for i in range(0, len(parsed_data_request_json['items'])):
+        # We now have our specific album id and title we can iterate through
+        album_title = parsed_data_request_json['items'][i]['name'].encode("utf-8")
+        album_id = parsed_data_request_json['items'][i]['id'].encode("utf-8")
+        # print ("Title: %s, ID: %s" % (album_title, album_id))
+        # Append to our string to be able to request multiple albums at the same time
+        all_album_id_string += album_id
+        if i != len(parsed_data_request_json['items'])-1:
+            all_album_id_string += ","
+    #print json.dumps(parsed_data_request_json, indent=4, sort_keys=True)
 
-    for data in parsed_data_request_json:
-        print data
+    albums_request_url = 'https://api.spotify.com/v1/albums?ids=' + all_album_id_string
+    # We now have our key, and new GET request for any data we want
+    albums_request_response = requests.get(albums_request_url, headers=api_request_headers, params=api_request_params)
+    if albums_request_response.status_code == 200:
+        print 'Request for albums data from spotify successful.'
+    else:
+        print 'Request for albums data from spotify failure: ', albums_request_response.status_code
+
+    with open("data_file.json", "a") as data_file:
+        data_file.write(albums_request_response.text)
 
 if __name__ == "__main__":
     main(sys.argv[0])
