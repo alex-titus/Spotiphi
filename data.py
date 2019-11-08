@@ -4,6 +4,7 @@ import ijson
 import json
 import time
 import sys
+import time
 
 def printPaths(file):
     # Will print all the paths inside of a json file you pass it, but it MUST BE A FILE
@@ -100,10 +101,20 @@ def main(arglist):
         for j in range(0, len(parsed_album_request_json['albums'][i]['tracks']['items'])):
             track_id = parsed_album_request_json['albums'][i]['tracks']['items'][j]['id']
             all_track_id_string += track_id
-            all_track_id_string += ","
+            if j != len(parsed_album_request_json['albums'][i]['tracks']['items'])-1:
+                all_track_id_string += ","
             total_track_count += 1
+        tracks_request_url = 'https://api.spotify.com/v1/tracks/?ids=' + all_track_id_string
+        tracks_request_response = spotifyAPI(tracks_request_url, api_authorization_token)
+        print tracks_request_response.status_code
+        time.sleep(1.0)
 
-    print total_track_count
+        all_track_id_string = ''
+
+    all_track_id_string = all_track_id_string[:-1]
+    tracks_request_url = 'https://api.spotify.com/v1/tracks/?ids=' + all_track_id_string
+
+    tracks_request_response = spotifyAPI(tracks_request_url, api_authorization_token)
 
 if __name__ == "__main__":
     main(sys.argv[0])
