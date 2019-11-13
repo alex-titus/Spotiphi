@@ -31,7 +31,7 @@ def spotifyAPI(url, api_authorization_token):
 
     request_response = requests.get(url, headers=api_request_headers, params=api_request_params)
     if request_response.status_code == 200:
-        print 'Request for our API token successful.'
+        print 'Request for our API call successful.'
     else:
         print 'Request for ', url, ' data from spotify failure: ', request_response.status_code
 
@@ -103,7 +103,7 @@ def main(arglist):
             for i in range(0, len(parsed_album_request_json['albums'])):
                 album_name = parsed_album_request_json['albums'][i]['name'].encode("utf-8")
                 album_id = parsed_data_request_json['items'][i]['id'].encode("utf-8")
-                artist_id = artist_id = parsed_data_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
+                artist_id  = parsed_data_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
                 album_releaste_date = parsed_album_request_json['albums'][i]['release_date']
                 album_popularity = parsed_album_request_json['albums'][i]['popularity']
                 for j in range(0, len(parsed_album_request_json['albums'][i]['tracks']['items'])):
@@ -120,24 +120,29 @@ def main(arglist):
                 parsed_tracks_request_json = json.loads(tracks_request_response.text)
                 parsed_audio_features_request_json = json.loads(audio_features_request_response.text)
                 with open("album_file.txt", "a") as album_file:
-                    album_file.write('Album(%s, %s, %s, %s, %s)\n' % (album_id, artist_id, album_name, album_releaste_date, album_popularity))
+                    album_file.write('%s,%s,%s,%s,%s\n' % (album_id, artist_id, album_name, album_releaste_date, album_popularity))
                 for k in range(0, len(parsed_audio_features_request_json['audio_features'])):
-                    track_danceability = parsed_audio_features_request_json['audio_features'][k]['danceability']
-                    track_energy = parsed_audio_features_request_json['audio_features'][k]['energy']
-                    track_key = parsed_audio_features_request_json['audio_features'][k]['key']
-                    track_loudness = parsed_audio_features_request_json['audio_features'][k]['loudness']
-                    track_speechiness = parsed_audio_features_request_json['audio_features'][k]['speechiness']
-                    track_acousticness = parsed_audio_features_request_json['audio_features'][k]['acousticness']
-                    track_instrumentalness = parsed_audio_features_request_json['audio_features'][k]['instrumentalness']
-                    track_liveness = parsed_audio_features_request_json['audio_features'][k]['liveness']
-                    track_valence = parsed_audio_features_request_json['audio_features'][k]['valence']
-                    track_tempo = parsed_audio_features_request_json['audio_features'][k]['tempo']
-                    track_id = parsed_audio_features_request_json['audio_features'][k]['id']
-                    track_name = parsed_tracks_request_json['tracks'][k]['name'].encode("utf-8")
-                    with open("track_file.txt", "a") as track_file:
-                        track_file.write('Track(%s, %s, %s, %s)\n' % (track_id, album_id, artist_id, track_name))
-                    with open("audio_features_file.txt", "a") as audio_features_file:
-                        audio_features_file.write('audio_features(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)\n' % (artist_id, album_id, track_id, track_danceability, track_energy, track_key, track_loudness, track_speechiness, track_acousticness, track_instrumentalness, track_liveness, track_valence, track_tempo))
+                    try:
+                        test_var = parsed_audio_features_request_json['audio_features'][k]['danceability']
+                    except TypeError:
+                        test_var = 0
+                    if test_var != 0:
+                        track_danceability = 0 + parsed_audio_features_request_json['audio_features'][k]['danceability']
+                        track_energy = 0 + parsed_audio_features_request_json['audio_features'][k]['energy']
+                        track_key = 0 + parsed_audio_features_request_json['audio_features'][k]['key']
+                        track_loudness = 0 + parsed_audio_features_request_json['audio_features'][k]['loudness']
+                        track_speechiness = 0 + parsed_audio_features_request_json['audio_features'][k]['speechiness']
+                        track_acousticness = 0 + parsed_audio_features_request_json['audio_features'][k]['acousticness']
+                        track_instrumentalness = 0 + parsed_audio_features_request_json['audio_features'][k]['instrumentalness']
+                        track_liveness = 0 + parsed_audio_features_request_json['audio_features'][k]['liveness']
+                        track_valence = 0 + parsed_audio_features_request_json['audio_features'][k]['valence']
+                        track_tempo = 0 + parsed_audio_features_request_json['audio_features'][k]['tempo']
+                        track_id = parsed_audio_features_request_json['audio_features'][k]['id']
+                        track_name = parsed_tracks_request_json['tracks'][k]['name'].encode("utf-8")
+                        with open("track_file.txt", "a") as track_file:
+                            track_file.write('%s,%s,%s,%s\n' % (track_id, album_id, artist_id, track_name))
+                        with open("audio_features_file.txt", "a") as audio_features_file:
+                            audio_features_file.write('%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n' % (artist_id, album_id, track_id, track_danceability, track_energy, track_key, track_loudness, track_speechiness, track_acousticness, track_instrumentalness, track_liveness, track_valence, track_tempo))
 
 
                 all_track_id_string = ''
