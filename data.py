@@ -69,27 +69,48 @@ def main(arglist):
         for line in artists_file:
             artist = line.strip()
             print 'Currently working on %s' % (artist)
-            api_request_url = 'https://api.spotify.com/v1/artists/' + artist + '/albums'
-            #api_request_url = 'https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums'
+
+            artist_info_request_url = 'https://api.spotify.com/v1/artists/' + artist
+            # We now have our key, and new GET request for any data we want
+            artist_info_request_response = spotifyAPI(artist_info_request_url, api_authorization_token)
+            parsed_artist_info_request_json = json.loads(artist_info_request_response.text)
+
+            #with open("artists_info_request_file.json", "w") as artists_info_request_file:
+            #    artists_info_request_file.write(artist_info_request_response.text)
+            artist_genre = ''
+            artist_info_id = parsed_artist_info_request_json['id']
+            artist_name = parsed_artist_info_request_json['name']
+            for m in range (0, len(parsed_artist_info_request_json['genres'])):
+                if m != len(parsed_artist_info_request_json['genres']):
+                    artist_genre += '`' + parsed_artist_info_request_json['genres'][m] + '` '
+                else:
+                    artist_genre += '`' + parsed_artist_info_request_json['genres'][m] + '`'
+            artist_followers = parsed_artist_info_request_json['followers']['total']
+            artist_popularity = parsed_artist_info_request_json['popularity']
+            with open("genre_file.csv", "a") as genre_file:
+                genre_file.write('%s\n' % (artist_genre))
+            with open("artist_file.csv", "a") as artist_file:
+                artist_file.write('%s,%s,%s,%s,%s\n' % (artist_info_id, artist_name, artist_genre, artist_followers, artist_popularity))
+
+            artist_albums_request_url = 'https://api.spotify.com/v1/artists/' + artist + '/albums'
+            #artist_albums_request_url = 'https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums'
 
             # We now have our key, and new GET request for any data we want
-            data_request_response = spotifyAPI(api_request_url, api_authorization_token)
-            parsed_data_request_json = json.loads(data_request_response.text)
+            artist_albums_request_response = spotifyAPI(artist_albums_request_url, api_authorization_token)
+            parsed_artist_albums_request_json = json.loads(artist_albums_request_response.text)
 
-            #with open("first_file.json", "w") as first_file:
-            #    first_file.write(data_request_response.text)
-            #printPaths('first_file.json')
-
+            #with open("artists_albums_request_file.json", "w") as artists_albums_request_file:
+            #    artists_albums_request_file.write(artist_albums_request_response.text)
             all_album_id_string = ""
-            for i in range(0, len(parsed_data_request_json['items'])):
+            for i in range(0, len(parsed_artist_albums_request_json['items'])):
                 # We now have our specific album id and title we can iterate through
-                album_id = parsed_data_request_json['items'][i]['id'].encode("utf-8")
-                # artist_id = parsed_data_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
-                # album_name = parsed_data_request_json['items'][i]['id'].encode("utf-8")
+                album_id = parsed_artist_albums_request_json['items'][i]['id'].encode("utf-8")
+                # artist_id = parsed_artist_albums_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
+                # album_name = parsed_artist_albums_request_json['items'][i]['id'].encode("utf-8")
                 # print ("Title: %s, ID: %s" % (album_title, album_id))
                 # Append to our string to be able to request multiple albums at the same time
                 all_album_id_string += album_id
-                if i != len(parsed_data_request_json['items'])-1:
+                if i != len(parsed_artist_albums_request_json['items'])-1:
                     all_album_id_string += ","
 
             albums_request_url = 'https://api.spotify.com/v1/albums?ids=' + all_album_id_string
@@ -98,12 +119,15 @@ def main(arglist):
             albums_request_response = spotifyAPI(albums_request_url, api_authorization_token)
             parsed_album_request_json = json.loads(albums_request_response.text)
 
+            #with open("albums_request_file.json", "w") as albums_request_file:
+            #    albums_request_file.write(albums_request_response.text)
+
             all_track_id_string = ""
             total_track_count = 0
             for i in range(0, len(parsed_album_request_json['albums'])):
                 album_name = parsed_album_request_json['albums'][i]['name'].encode("utf-8")
-                album_id = parsed_data_request_json['items'][i]['id'].encode("utf-8")
-                artist_id  = parsed_data_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
+                album_id = parsed_artist_albums_request_json['items'][i]['id'].encode("utf-8")
+                artist_id  = parsed_artist_albums_request_json['items'][i]['artists'][0]['id'].encode("utf-8")
                 album_releaste_date = parsed_album_request_json['albums'][i]['release_date']
                 album_popularity = parsed_album_request_json['albums'][i]['popularity']
                 for j in range(0, len(parsed_album_request_json['albums'][i]['tracks']['items'])):
@@ -119,8 +143,12 @@ def main(arglist):
                 tracks_request_response = spotifyAPI(tracks_request_url, api_authorization_token)
                 parsed_tracks_request_json = json.loads(tracks_request_response.text)
                 parsed_audio_features_request_json = json.loads(audio_features_request_response.text)
-                with open("album_file.txt", "a") as album_file:
-                    album_file.write('%s,%s,%s,%s,%s\n' % (album_id, artist_id, album_name, album_releaste_date, album_popularity))
+                #with open("audio_features_request_file.json", "w") as audio_features_request_file:
+                #    audio_features_request_file.write(audio_features_request_response.text)
+                #with open("tracks_request_file.json", "w") as tracks_request_file:
+                #    tracks_request_file.write(tracks_request_response.text)
+                with open("album_file.csv", "a") as album_file:
+                    album_file.write('%s,%s,%s,%s,%s\n' % (album_id, artist_id, album_name, album_popularity, album_releaste_date))
                 for k in range(0, len(parsed_audio_features_request_json['audio_features'])):
                     try:
                         test_var = parsed_audio_features_request_json['audio_features'][k]['danceability']
@@ -128,6 +156,7 @@ def main(arglist):
                         test_var = 0
                     if test_var != 0:
                         track_danceability = 0 + parsed_audio_features_request_json['audio_features'][k]['danceability']
+                        track_duration_ms = 0 + parsed_audio_features_request_json['audio_features'][k]['duration_ms']
                         track_energy = 0 + parsed_audio_features_request_json['audio_features'][k]['energy']
                         track_key = 0 + parsed_audio_features_request_json['audio_features'][k]['key']
                         track_loudness = 0 + parsed_audio_features_request_json['audio_features'][k]['loudness']
@@ -137,12 +166,16 @@ def main(arglist):
                         track_liveness = 0 + parsed_audio_features_request_json['audio_features'][k]['liveness']
                         track_valence = 0 + parsed_audio_features_request_json['audio_features'][k]['valence']
                         track_tempo = 0 + parsed_audio_features_request_json['audio_features'][k]['tempo']
+                        track_mode = 0 + parsed_audio_features_request_json['audio_features'][k]['mode']
                         track_id = parsed_audio_features_request_json['audio_features'][k]['id']
+                        track_time_signature = parsed_audio_features_request_json['audio_features'][k]['time_signature']
                         track_name = parsed_tracks_request_json['tracks'][k]['name'].encode("utf-8")
-                        with open("track_file.txt", "a") as track_file:
-                            track_file.write('%s,%s,%s,%s\n' % (track_id, album_id, artist_id, track_name))
-                        with open("audio_features_file.txt", "a") as audio_features_file:
-                            audio_features_file.write('%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n' % (artist_id, album_id, track_id, track_danceability, track_energy, track_key, track_loudness, track_speechiness, track_acousticness, track_instrumentalness, track_liveness, track_valence, track_tempo))
+                        track_explicit = parsed_tracks_request_json['tracks'][k]['explicit']
+                        track_popularity = parsed_tracks_request_json['tracks'][k]['popularity']
+                        with open("track_file.csv", "a") as track_file:
+                            track_file.write('%s,%s,%s,%s,%s,%s\n' % (track_id,album_id, artist_id, track_explicit, track_name, track_popularity))
+                        with open("audio_features_file.csv", "a") as audio_features_file:
+                            audio_features_file.write('%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n' % (artist_id, album_id, track_id, track_acousticness, track_danceability, track_duration_ms, track_energy, track_instrumentalness, track_key, track_liveness, track_loudness, track_mode, track_speechiness, track_tempo, track_time_signature, track_valence))
 
 
                 all_track_id_string = ''

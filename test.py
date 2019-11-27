@@ -55,7 +55,7 @@ def getSpotifyToken():
 
     return api_token_response
 
-def main(arglist):
+def test(arglist):
     reload(sys)
     sys.setdefaultencoding('utf8')
     # Doing our POST, will now have authorization from the server
@@ -83,6 +83,16 @@ def main(arglist):
             #    related_artists_file.write(data_request_response.text)
 
             #printPaths('related_artists_file.txt')
+
+def main(arglist):
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+
+    #printPaths('artists_albums_request_file.json')
+    #printPaths('albums_request_file.json')
+    #printPaths('audio_features_request_file.json')
+    #pr1intPaths('tracks_request_file.json')
+    printPaths('artists_info_request_file.json')
 
 if __name__ == "__main__":
     main(sys.argv[0])
