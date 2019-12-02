@@ -55,9 +55,7 @@ def getSpotifyToken():
 
     return api_token_response
 
-def test(arglist):
-    reload(sys)
-    sys.setdefaultencoding('utf8')
+def test():
     # Doing our POST, will now have authorization from the server
     api_token_response = getSpotifyToken()
 
@@ -75,9 +73,10 @@ def test(arglist):
             data_request_response = spotifyAPI(api_request_url, api_authorization_token)
             parsed_data_request_json = json.loads(data_request_response.text)
 
-            for i in range(0, len(parsed_data_request_json['artists'])):
-                artists_file.write(parsed_data_request_json['artists'][i]['id'])
-                artists_file.write('\n')
+            for i in range(0, len(parsed_data_request_json['artists'])-1):
+                with open("giant_artists.txt", "a+") as giant_file:
+                    giant_file.write(parsed_data_request_json['artists'][i]['id'])
+                    giant_file.write('\n')
 
             #with open("related_artists_file.txt", "w") as related_artists_file:
             #    related_artists_file.write(data_request_response.text)
@@ -92,7 +91,9 @@ def main(arglist):
     #printPaths('albums_request_file.json')
     #printPaths('audio_features_request_file.json')
     #pr1intPaths('tracks_request_file.json')
-    printPaths('artists_info_request_file.json')
+    #printPaths('artists_info_request_file.json')
+    test()
+    test()
 
 if __name__ == "__main__":
     main(sys.argv[0])

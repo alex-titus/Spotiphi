@@ -65,7 +65,7 @@ def main(arglist):
     api_authorization_token = parsed_api_token_json.get('access_token')
     api_authorization_token = 'Bearer ' + api_authorization_token
 
-    with open("all_artists.txt", "r") as artists_file:
+    with open("all_artists_sorted.txt", "r") as artists_file:
         for line in artists_file:
             artist = line.strip()
             print 'Currently working on %s' % (artist)
@@ -87,9 +87,9 @@ def main(arglist):
                     artist_genre += '`' + parsed_artist_info_request_json['genres'][m] + '`'
             artist_followers = parsed_artist_info_request_json['followers']['total']
             artist_popularity = parsed_artist_info_request_json['popularity']
-            with open("genre_file.csv", "a") as genre_file:
+            with open("output/genre_file.csv", "a") as genre_file:
                 genre_file.write('%s\n' % (artist_genre))
-            with open("artist_file.csv", "a") as artist_file:
+            with open("output/artist_file.csv", "a") as artist_file:
                 artist_file.write('%s,%s,%s,%s,%s\n' % (artist_info_id, artist_name, artist_genre, artist_followers, artist_popularity))
 
             artist_albums_request_url = 'https://api.spotify.com/v1/artists/' + artist + '/albums'
@@ -147,7 +147,7 @@ def main(arglist):
                 #    audio_features_request_file.write(audio_features_request_response.text)
                 #with open("tracks_request_file.json", "w") as tracks_request_file:
                 #    tracks_request_file.write(tracks_request_response.text)
-                with open("album_file.csv", "a") as album_file:
+                with open("output/album_file.csv", "a") as album_file:
                     album_file.write('%s,%s,%s,%s,%s\n' % (album_id, artist_id, album_name, album_popularity, album_releaste_date))
                 for k in range(0, len(parsed_audio_features_request_json['audio_features'])):
                     try:
@@ -172,9 +172,9 @@ def main(arglist):
                         track_name = parsed_tracks_request_json['tracks'][k]['name'].encode("utf-8")
                         track_explicit = parsed_tracks_request_json['tracks'][k]['explicit']
                         track_popularity = parsed_tracks_request_json['tracks'][k]['popularity']
-                        with open("track_file.csv", "a") as track_file:
+                        with open("output/track_file.csv", "a") as track_file:
                             track_file.write('%s,%s,%s,%s,%s,%s\n' % (track_id,album_id, artist_id, track_explicit, track_name, track_popularity))
-                        with open("audio_features_file.csv", "a") as audio_features_file:
+                        with open("output/audio_features_file.csv", "a") as audio_features_file:
                             audio_features_file.write('%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n' % (artist_id, album_id, track_id, track_acousticness, track_danceability, track_duration_ms, track_energy, track_instrumentalness, track_key, track_liveness, track_loudness, track_mode, track_speechiness, track_tempo, track_time_signature, track_valence))
 
 

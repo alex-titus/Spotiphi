@@ -1,0 +1,812 @@
+{
+  "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums?offset=0&limit=20&include_groups=album,single,compilation,appears_on&market=ES",
+  "items" : [ {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4g1ZRSobMefqF6nelkgibi"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4g1ZRSobMefqF6nelkgibi",
+    "id" : "4g1ZRSobMefqF6nelkgibi",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/94105e271865c28853bfb7b44b38353a2fea45d6",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e2e8a627df64b4824c9f2bb8e69e44f975200abb",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a7f2cc3d9b653ac116a3666cc3aaf01880aab8bd",
+      "width" : 64
+    } ],
+    "name" : "Hollywood's Bleeding",
+    "release_date" : "2019-09-06",
+    "release_date_precision" : "day",
+    "total_tracks" : 17,
+    "type" : "album",
+    "uri" : "spotify:album:4g1ZRSobMefqF6nelkgibi"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3xiq77UtnlDXfcRz5IJu20"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3xiq77UtnlDXfcRz5IJu20",
+    "id" : "3xiq77UtnlDXfcRz5IJu20",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/94105e271865c28853bfb7b44b38353a2fea45d6",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e2e8a627df64b4824c9f2bb8e69e44f975200abb",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a7f2cc3d9b653ac116a3666cc3aaf01880aab8bd",
+      "width" : 64
+    } ],
+    "name" : "Hollywood's Bleeding",
+    "release_date" : "2019-09-06",
+    "release_date_precision" : "day",
+    "total_tracks" : 17,
+    "type" : "album",
+    "uri" : "spotify:album:3xiq77UtnlDXfcRz5IJu20"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR"
+    },
+    "href" : "https://api.spotify.com/v1/albums/6trNtQUgC8cgbWcqoMYkOR",
+    "id" : "6trNtQUgC8cgbWcqoMYkOR",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/08569f4ebf39ea275f9601a0f5ae62c489485a7b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/d85f15fcbf946d42f3465a8bf1294fff6c64d5fd",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/4eeab79394ac6dd1d58132e9cecc5d6ba61b9ca1",
+      "width" : 64
+    } ],
+    "name" : "beerbongs & bentleys",
+    "release_date" : "2018-04-27",
+    "release_date_precision" : "day",
+    "total_tracks" : 18,
+    "type" : "album",
+    "uri" : "spotify:album:6trNtQUgC8cgbWcqoMYkOR"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5s0rmjP8XOPhP6HhqOhuyC"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5s0rmjP8XOPhP6HhqOhuyC",
+    "id" : "5s0rmjP8XOPhP6HhqOhuyC",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c17e558d633b4d3d2c589abf4478fd4e2b52a09b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/b131bfab0aa87470e34e3d5f017d6d1eec66572b",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/23bae95100dcb6ac8f88c19fa2a11c50a998a926",
+      "width" : 64
+    } ],
+    "name" : "Stoney (Deluxe)",
+    "release_date" : "2016-12-09",
+    "release_date_precision" : "day",
+    "total_tracks" : 18,
+    "type" : "album",
+    "uri" : "spotify:album:5s0rmjP8XOPhP6HhqOhuyC"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3zAcZrky4QNM28YS0tHSYQ"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3zAcZrky4QNM28YS0tHSYQ",
+    "id" : "3zAcZrky4QNM28YS0tHSYQ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c17e558d633b4d3d2c589abf4478fd4e2b52a09b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/b131bfab0aa87470e34e3d5f017d6d1eec66572b",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/23bae95100dcb6ac8f88c19fa2a11c50a998a926",
+      "width" : 64
+    } ],
+    "name" : "Stoney",
+    "release_date" : "2016-12-09",
+    "release_date_precision" : "day",
+    "total_tracks" : 14,
+    "type" : "album",
+    "uri" : "spotify:album:3zAcZrky4QNM28YS0tHSYQ"
+  }, {
+    "album_group" : "single",
+    "album_type" : "single",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/757aE44tKEUQEqRuT6GnEB"
+      },
+      "href" : "https://api.spotify.com/v1/artists/757aE44tKEUQEqRuT6GnEB",
+      "id" : "757aE44tKEUQEqRuT6GnEB",
+      "name" : "Roddy Ricch",
+      "type" : "artist",
+      "uri" : "spotify:artist:757aE44tKEUQEqRuT6GnEB"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5LHRHt1k9lMyONurDHEdrp"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5LHRHt1k9lMyONurDHEdrp",
+      "id" : "5LHRHt1k9lMyONurDHEdrp",
+      "name" : "Tyga",
+      "type" : "artist",
+      "uri" : "spotify:artist:5LHRHt1k9lMyONurDHEdrp"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1Id3Zj9GMvi7dPj3u6cMNs"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1Id3Zj9GMvi7dPj3u6cMNs",
+    "id" : "1Id3Zj9GMvi7dPj3u6cMNs",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d30c07323bfb1a0d27b4733e0c4884e6ccfec277",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/5abd0309464eb351e54dfbe5eb57055d05415829",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/68b75a13d0e2451a79a50db2776ab3d3c374a94f",
+      "width" : 64
+    } ],
+    "name" : "Wow. (Remix)",
+    "release_date" : "2019-03-15",
+    "release_date_precision" : "day",
+    "total_tracks" : 1,
+    "type" : "album",
+    "uri" : "spotify:album:1Id3Zj9GMvi7dPj3u6cMNs"
+  }, {
+    "album_group" : "single",
+    "album_type" : "single",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5oL7DNAeNb3CzJ4AujYFlO"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5oL7DNAeNb3CzJ4AujYFlO",
+    "id" : "5oL7DNAeNb3CzJ4AujYFlO",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/2eae2889431df6427dcbb16caf53321888ff5524",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/bb1c9a630b666a031c5893e87453f7dfd558edd0",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a96cd569a031a8a3b2944f134ceace7e18ea37fe",
+      "width" : 64
+    } ],
+    "name" : "Wow. (Instrumental)",
+    "release_date" : "2019-03-14",
+    "release_date_precision" : "day",
+    "total_tracks" : 1,
+    "type" : "album",
+    "uri" : "spotify:album:5oL7DNAeNb3CzJ4AujYFlO"
+  }, {
+    "album_group" : "single",
+    "album_type" : "single",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1SupJlEpv7RS2tPNRaHViT"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1SupJlEpv7RS2tPNRaHViT",
+      "id" : "1SupJlEpv7RS2tPNRaHViT",
+      "name" : "Nicky Jam",
+      "type" : "artist",
+      "uri" : "spotify:artist:1SupJlEpv7RS2tPNRaHViT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1i8SpTcr7yvPOmcqrbnVXY"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1i8SpTcr7yvPOmcqrbnVXY",
+      "id" : "1i8SpTcr7yvPOmcqrbnVXY",
+      "name" : "Ozuna",
+      "type" : "artist",
+      "uri" : "spotify:artist:1i8SpTcr7yvPOmcqrbnVXY"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/7zoRgdMDAV1J7N4tfmnwtF"
+    },
+    "href" : "https://api.spotify.com/v1/albums/7zoRgdMDAV1J7N4tfmnwtF",
+    "id" : "7zoRgdMDAV1J7N4tfmnwtF",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/e92edb1e52e749a3afd036f0990e241682fc2243",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/a058ecd63e349d30bb628ca7b59f7dbf2411d05c",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/fb7e0f1b1d2834929e32f6acfe23e1a158907ce0",
+      "width" : 64
+    } ],
+    "name" : "rockstar (Remix)",
+    "release_date" : "2017-12-08",
+    "release_date_precision" : "day",
+    "total_tracks" : 1,
+    "type" : "album",
+    "uri" : "spotify:album:7zoRgdMDAV1J7N4tfmnwtF"
+  }, {
+    "album_group" : "single",
+    "album_type" : "single",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "href" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id" : "246dkjvS1zLTtiykXe5h60",
+      "name" : "Post Malone",
+      "type" : "artist",
+      "uri" : "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0VRj0yCOv2FXJNP47XQnx5"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0VRj0yCOv2FXJNP47XQnx5",
+      "id" : "0VRj0yCOv2FXJNP47XQnx5",
+      "name" : "Quavo",
+      "type" : "artist",
+      "uri" : "spotify:artist:0VRj0yCOv2FXJNP47XQnx5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+      "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+      "name" : "Future",
+      "type" : "artist",
+      "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3oeiU8nG5eDm5YPpDvK6eS"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3oeiU8nG5eDm5YPpDvK6eS",
+    "id" : "3oeiU8nG5eDm5YPpDvK6eS",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/2f4bc023893bbc6859009fd680d07a40c648b012",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/27b05730bbf1af96832ddbd5397ad4f6766571db",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/0d33472e91053c2f5a76fea61a9aa20ed901cc3e",
+      "width" : 64
+    } ],
+    "name" : "Congratulations (Remix)",
+    "release_date" : "2017-06-16",
+    "release_date_precision" : "day",
+    "total_tracks" : 1,
+    "type" : "album",
+    "uri" : "spotify:album:3oeiU8nG5eDm5YPpDvK6eS"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2FJ7ofXR92xTsE0v0kw8vL"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2FJ7ofXR92xTsE0v0kw8vL",
+    "id" : "2FJ7ofXR92xTsE0v0kw8vL",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/5d75605451bc32ff218cf9d3c7064ddff47ba060",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/20108cbbe5ae01e1c5ab6a7c23d8cf0348e49e2d",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/406c230097f1fc2e5bc261de5efcdd23463048e1",
+      "width" : 64
+    } ],
+    "name" : "GH VIP 2019",
+    "release_date" : "2019-10-24",
+    "release_date_precision" : "day",
+    "total_tracks" : 40,
+    "type" : "album",
+    "uri" : "spotify:album:2FJ7ofXR92xTsE0v0kw8vL"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/6MA1WawISnOkFcGZMhX4mV"
+    },
+    "href" : "https://api.spotify.com/v1/albums/6MA1WawISnOkFcGZMhX4mV",
+    "id" : "6MA1WawISnOkFcGZMhX4mV",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ec1601e4a65446e2397fccccca173e9ed1585878",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/072bd3078dc2659272c16ec8654aaf0d587024ac",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/134a36206386638ceaca40a543ca56e7b54c863c",
+      "width" : 64
+    } ],
+    "name" : "Europa FM 2019",
+    "release_date" : "2019-09-27",
+    "release_date_precision" : "day",
+    "total_tracks" : 38,
+    "type" : "album",
+    "uri" : "spotify:album:6MA1WawISnOkFcGZMhX4mV"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "single",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6vXTefBL93Dj5IqAWq6OTv"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6vXTefBL93Dj5IqAWq6OTv",
+      "id" : "6vXTefBL93Dj5IqAWq6OTv",
+      "name" : "French Montana",
+      "type" : "artist",
+      "uri" : "spotify:artist:6vXTefBL93Dj5IqAWq6OTv"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1fctva4kpRbg2k3v7kwRuS"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1fctva4kpRbg2k3v7kwRuS",
+      "id" : "1fctva4kpRbg2k3v7kwRuS",
+      "name" : "Rvssian",
+      "type" : "artist",
+      "uri" : "spotify:artist:1fctva4kpRbg2k3v7kwRuS"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2ZoLcA4NMOjJGFKeANgNpF"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2ZoLcA4NMOjJGFKeANgNpF",
+    "id" : "2ZoLcA4NMOjJGFKeANgNpF",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/3ff3664ca2b74cf03f57dbb772bc9bd2c55e9864",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/891e5eea985bc1f01497f56988472c87f8b50a3a",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/4be7cc5e85a819d0e093eda3f2717ff6615df606",
+      "width" : 64
+    } ],
+    "name" : "Writing on the Wall (feat. Post Malone & Cardi B)",
+    "release_date" : "2019-09-27",
+    "release_date_precision" : "day",
+    "total_tracks" : 1,
+    "type" : "album",
+    "uri" : "spotify:album:2ZoLcA4NMOjJGFKeANgNpF"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/0urSxgSRruqI8ukIPldCsA"
+    },
+    "href" : "https://api.spotify.com/v1/albums/0urSxgSRruqI8ukIPldCsA",
+    "id" : "0urSxgSRruqI8ukIPldCsA",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273b4dd4cf543c4da0a00e8197f",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02b4dd4cf543c4da0a00e8197f",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851b4dd4cf543c4da0a00e8197f",
+      "width" : 64
+    } ],
+    "name" : "Megastar FM 2019 (Solo Temazos)",
+    "release_date" : "2019-07-19",
+    "release_date_precision" : "day",
+    "total_tracks" : 24,
+    "type" : "album",
+    "uri" : "spotify:album:0urSxgSRruqI8ukIPldCsA"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/75oNJEw5IWsZMhaqZlR30n"
+    },
+    "href" : "https://api.spotify.com/v1/albums/75oNJEw5IWsZMhaqZlR30n",
+    "id" : "75oNJEw5IWsZMhaqZlR30n",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273655d3459e42c4538c34d3708",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02655d3459e42c4538c34d3708",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851655d3459e42c4538c34d3708",
+      "width" : 64
+    } ],
+    "name" : "Caribe 2019 + Disco Estrella Vol. 22",
+    "release_date" : "2019-06-14",
+    "release_date_precision" : "day",
+    "total_tracks" : 80,
+    "type" : "album",
+    "uri" : "spotify:album:75oNJEw5IWsZMhaqZlR30n"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1wRUbgaBbRf8aCFBc5JRPB"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1wRUbgaBbRf8aCFBc5JRPB",
+    "id" : "1wRUbgaBbRf8aCFBc5JRPB",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27352d93058c40db7936a526691",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0252d93058c40db7936a526691",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485152d93058c40db7936a526691",
+      "width" : 64
+    } ],
+    "name" : "Disco Estrella Vol. 22 (Los Auténticos Éxitos Del Verano 2019)",
+    "release_date" : "2019-06-14",
+    "release_date_precision" : "day",
+    "total_tracks" : 40,
+    "type" : "album",
+    "uri" : "spotify:album:1wRUbgaBbRf8aCFBc5JRPB"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0QHgL1lAIqAw0HtD7YldmP"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0QHgL1lAIqAw0HtD7YldmP",
+      "id" : "0QHgL1lAIqAw0HtD7YldmP",
+      "name" : "DJ Khaled",
+      "type" : "artist",
+      "uri" : "spotify:artist:0QHgL1lAIqAw0HtD7YldmP"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1YgX8BWKleDlDeCOFklRfz"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1YgX8BWKleDlDeCOFklRfz",
+    "id" : "1YgX8BWKleDlDeCOFklRfz",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273fa2741071b31bb94cb4232ae",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02fa2741071b31bb94cb4232ae",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851fa2741071b31bb94cb4232ae",
+      "width" : 64
+    } ],
+    "name" : "Father Of Asahd",
+    "release_date" : "2019-05-17",
+    "release_date_precision" : "day",
+    "total_tracks" : 15,
+    "type" : "album",
+    "uri" : "spotify:album:1YgX8BWKleDlDeCOFklRfz"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2AxOOszzPGtpcxeZQSoOZb"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2AxOOszzPGtpcxeZQSoOZb",
+    "id" : "2AxOOszzPGtpcxeZQSoOZb",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2731c27bf17601527ff96ed43c3",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e021c27bf17601527ff96ed43c3",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048511c27bf17601527ff96ed43c3",
+      "width" : 64
+    } ],
+    "name" : "Superventas 2019",
+    "release_date" : "2019-05-10",
+    "release_date_precision" : "day",
+    "total_tracks" : 37,
+    "type" : "album",
+    "uri" : "spotify:album:2AxOOszzPGtpcxeZQSoOZb"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3Yzs99VxLGitfinZiH7Hbx"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3Yzs99VxLGitfinZiH7Hbx",
+    "id" : "3Yzs99VxLGitfinZiH7Hbx",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/dafbc85347cfff3e30661a89889f1f19dd0d4321",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/20bb6573c55149bf4bbcaa3435700d9eb0ac90f5",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/3e4ab0eedf764b155f07bfc7e558a7d73a869078",
+      "width" : 64
+    } ],
+    "name" : "GH DÚO",
+    "release_date" : "2019-03-15",
+    "release_date_precision" : "day",
+    "total_tracks" : 42,
+    "type" : "album",
+    "uri" : "spotify:album:3Yzs99VxLGitfinZiH7Hbx"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3pOj4mmxL5MUwR1IR8LPzL"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3pOj4mmxL5MUwR1IR8LPzL",
+    "id" : "3pOj4mmxL5MUwR1IR8LPzL",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273ea0eb66d4b8fef4a84c599fe",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ea0eb66d4b8fef4a84c599fe",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851ea0eb66d4b8fef4a84c599fe",
+      "width" : 64
+    } ],
+    "name" : "Spider-Man: Into the Spider-Verse (Deluxe Edition / Soundtrack From & Inspired By The Motion Picture)",
+    "release_date" : "2019-02-22",
+    "release_date_precision" : "day",
+    "total_tracks" : 15,
+    "type" : "album",
+    "uri" : "spotify:album:3pOj4mmxL5MUwR1IR8LPzL"
+  }, {
+    "album_group" : "appears_on",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE"
+      },
+      "href" : "https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE",
+      "id" : "43ZHCT0cAZBISjO8DG9PnE",
+      "name" : "Elvis Presley",
+      "type" : "artist",
+      "uri" : "spotify:artist:43ZHCT0cAZBISjO8DG9PnE"
+    } ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1vaQwUom5fWnLNJDcabU01"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1vaQwUom5fWnLNJDcabU01",
+    "id" : "1vaQwUom5fWnLNJDcabU01",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27364bacd30d444e59fb40319e0",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0264bacd30d444e59fb40319e0",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485164bacd30d444e59fb40319e0",
+      "width" : 64
+    } ],
+    "name" : "The Best of The '68 Comeback Special",
+    "release_date" : "2019-02-15",
+    "release_date_precision" : "day",
+    "total_tracks" : 19,
+    "type" : "album",
+    "uri" : "spotify:album:1vaQwUom5fWnLNJDcabU01"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60/albums?offset=20&limit=20&include_groups=album,single,compilation,appears_on&market=ES",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 71
+}
